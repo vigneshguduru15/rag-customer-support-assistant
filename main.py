@@ -5,8 +5,8 @@ from src.llm import get_llm
 
 def main():
     vectorstore = build_rag_pipeline(
-    "/Users/vigneshguduru/Downloads/RAG project with LangGraph/data/ml_notes.pdf"
-)
+    "data/customer_support_faq.pdf"
+    )
 
     retriever = get_retriever(vectorstore)
     llm = get_llm()
